@@ -120,8 +120,8 @@ vids_info_
 vids_df  = pd.DataFrame(vids_info_)
 vids_df.head(3)
 
-vids_df.to_csv('movieclips_videos_info.csv')
-files.download('movieclips_videos_info.csv')
+vids_df.to_csv('movieclips_videos_info.zip', index=False, compression='zip')
+files.download('movieclips_videos_info.zip')
 
 def get_comments_info_func(youtube, vids_ids):
 
